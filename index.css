@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+[data-theme="foco"] {
+  --main-bg-color: radial-gradient(rgb(239, 68, 68), rgb(153, 27, 27));
+}
+
+[data-theme="descanso-curto"] {
+  --main-bg-color: radial-gradient(rgb(16, 185, 129), rgb(101, 163, 13));
+}
+
+[data-theme="descanso-longo"] {
+  --main-bg-color: radial-gradient(rgb(56, 189, 248), rgb(59, 130, 246));
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+html {
+  background: var(--main-bg-color);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* .main__app {
+
+} */
