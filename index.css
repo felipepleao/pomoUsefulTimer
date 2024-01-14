@@ -29,16 +29,20 @@
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 html {
   background: var(--main-bg-color);
 }
 
-body {
+body,
+.time-mode-list,
+.time-countdown,
+.time-controls,
+.time-controls-playAndPause {
   display: flex;
   justify-content: center;
-  height: 100vh;
 }
 
 .main__app {
@@ -56,6 +60,11 @@ body {
   text-align: center;
 }
 
+.app__title-text {
+  text-align: center;
+  
+}
+
 .app__title-text strong {
   color: rgb(201, 194, 193);
 }
@@ -71,19 +80,17 @@ body {
 }
 
 .time-mode-list {
-  display: flex;
-  align-items: center;
   column-gap: 2rem;
 }
 
 .time-mode-list-item button {
   font-size: 1.6rem;
   color: var(--color-timer-text);
-  padding: 1.6rem;
+  padding: 1.2rem;
   border-radius: 5px;
   font-weight: 600;
   text-transform: uppercase;
-  cursor: pointer;
+
 }
 
 .time-mode-list-item button.select {
@@ -94,9 +101,7 @@ body {
 
 .time-countdown {
   color: #F8F8FC;
-  display: flex;
   align-items: center;
-  justify-content: center;
   font-weight: 700;
   font-size: 9.6rem;
   margin-bottom: 3.8rem;
@@ -104,13 +109,32 @@ body {
 
 .time-controls {
   text-align: acenter;
-  display: flex;
   place-content: center;
   gap: 0 1rem;
 }
 
+.time-controls,
+.time-controls-playAndPause {
+  align-items: center;
+}
+
+.time-controls-playAndPause {
+  column-gap: .5rem;
+}
+
 .time-controls button {
   font-size: 1.6rem;
-  padding: 1.6rem;
-  background-color: yellow;
+  padding: .5rem 1.6rem;
+  font-weight: 700;
+  color: var(--color-timer-text);
+  border-radius: 8px;
+}
+
+.time-controls button:hover {
+  background-color: #f8f8fc2f;
+  transition: 1s;
+}
+
+.hidden {
+  display: none;
 }
