@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PomoUsefulTimer</title>
 
-    <link rel="icon" href="assets/icon.svg">
+    <link rel="icon" href="assets/icon.svg" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,13 +18,15 @@
   <body>
     <main class="main__app">
       <div class="app__title">
-        <img
-          class="app__title-img"
-          src="assets/logo.svg"
-          alt=""
-          width="200"
-          height="200"
-        />
+        <div class="app__title-image">
+          <img
+            class="app__title-img"
+            src="assets/logo.svg"
+            alt=""
+            width="200"
+            height="200"
+          />
+        </div>
         <h1 class="app__title-text">
           Mantenha o <strong>FOCO</strong> para conquistar seu objetivo!
         </h1>
@@ -35,7 +37,9 @@
           <div class="time-mode">
             <ul class="time-mode-list">
               <li class="time-mode-list-item">
-                <button data-theme="foco" data-timer="25">Foco</button>
+                <button data-theme="foco" data-timer="25" class="select">
+                  Foco
+                </button>
               </li>
               <li class="time-mode-list-item">
                 <button data-theme="descanso-curto" data-timer="5">
@@ -58,11 +62,11 @@
 
           <div class="time-controls">
             <button class="time-controls-playAndPause">
-              <img src="" alt="">
+              <img src="" alt="" />
               <span>Play</span>
             </button>
             <button class="time-controls-Skip">
-              <img src="" alt="">
+              <img src="" alt="" />
               <span>skip</span>
             </button>
           </div>

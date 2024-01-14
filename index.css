@@ -3,11 +3,14 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+
+  --color-timer-text: #F8F8FC;
+  --color-timer-text-select: #121214;
 }
 
 
@@ -34,13 +37,80 @@ html {
 
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.
+.main__app {
+  padding: 0 2rem;
+  margin-top: 5rem;
+}
 
-/* .main__app {
+.app__title {
+  margin-bottom: 6.4rem;
+  font-weight: 700;
+  color: var(--color-timer-text);
+}
 
-} */
+.app__title-image {
+  text-align: center;
+}
+
+.app__title-text strong {
+  color: rgb(201, 194, 193);
+}
+
+.background-container-timer {
+  padding: 2rem;
+  border-radius: 8px;
+  background: var(--main-bg-color, rgba(20, 68, 128, 0.30));
+}
+
+.time-mode {
+  margin-bottom: 3.8rem;
+}
+
+.time-mode-list {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.time-mode-list-item button {
+  font-size: 1.6rem;
+  color: var(--color-timer-text);
+  padding: 1.6rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.time-mode-list-item button.select {
+  color: var(--color-timer-text-select);
+  border: 2px solid var(--color-timer-text-select);
+  background: var(--main-bg-color, rgba(20, 68, 128, 0.30));
+}
+
+.time-countdown {
+  color: #F8F8FC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 9.6rem;
+  margin-bottom: 3.8rem;
+}
+
+.time-controls {
+  text-align: acenter;
+  display: flex;
+  place-content: center;
+  gap: 0 1rem;
+}
+
+.time-controls button {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  background-color: yellow;
+}
