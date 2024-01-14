@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script src="/scripts/main.js" defer></script>
+    <script src="/scripts/main.js" type="module" defer></script>
   </head>
   <body>
     <main class="main__app">
@@ -37,17 +37,29 @@
           <div class="time-mode">
             <ul class="time-mode-list">
               <li class="time-mode-list-item">
-                <button data-theme="foco" data-timer="25" class="select">
+                <button
+                  data-theme="foco"
+                  data-timer="25"
+                  class="time-mode-list-item--foco select"
+                >
                   Foco
                 </button>
               </li>
               <li class="time-mode-list-item">
-                <button data-theme="descanso-curto" data-timer="5">
+                <button
+                  data-theme="descanso-curto"
+                  data-timer="5"
+                  class="time-mode-list-item--descanso-curto"
+                >
                   Descanso Curto
                 </button>
               </li>
               <li class="time-mode-list-item">
-                <button data-theme="descanso-longo" data-timer="15">
+                <button
+                  data-theme="descanso-longo"
+                  data-timer="15"
+                  class="time-mode-list-item--descanso-longo"
+                >
                   Descanso Longo
                 </button>
               </li>
