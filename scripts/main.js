@@ -11,6 +11,7 @@ const {
   countdownMinutes,
   playAndPauseBtn,
   playAndPauseImg,
+  playAndPauseText,
   skipBtn,
 } = elements;
 
@@ -22,10 +23,12 @@ const modeSelect = ControlsMode({
   longoBtn,
   countdownMinutes,
 });
+
 const timerControls = TimerCountdown({
   countdownMinutes,
   playAndPauseBtn,
   playAndPauseImg,
+  playAndPauseText,
   skipBtn,
 });
 
@@ -42,5 +45,9 @@ longoBtn.addEventListener("click", function () {
 });
 
 playAndPauseBtn.addEventListener("click", () => {
-  timerControls.play();
+  timerControls.playAndPause();
+});
+
+skipBtn.addEventListener("click", () => {
+  timerControls.skip();
 });

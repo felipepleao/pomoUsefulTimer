@@ -5,6 +5,9 @@ const curtoBtn = document.querySelector(".time-mode-list-item--descanso-curto");
 const longoBtn = document.querySelector(".time-mode-list-item--descanso-longo");
 const countdownMinutes = document.querySelector(".time-countdown-minutes");
 const playAndPauseBtn = document.querySelector(".time-controls-playAndPause");
+const playAndPauseText = document.querySelector(
+  ".time-controls-playAndPause span"
+);
 const playAndPauseImg = document.querySelector(
   ".time-controls-playAndPause img"
 );
@@ -19,5 +22,6 @@ export const elements = {
   countdownMinutes,
   playAndPauseBtn,
   playAndPauseImg,
+  playAndPauseText,
   skipBtn,
 };
