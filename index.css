@@ -150,9 +150,3 @@ body,
 .hidden {
   display: none;
 }
-
-@media (max-width: 800px) {
-  * {
-    background-color: yellow;
-  }
-}
