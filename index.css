@@ -36,6 +36,11 @@ html {
   background: var(--main-bg-color);
 }
 
+body {
+  height: 100vh;
+  align-items: center;
+}
+
 body,
 .time-mode-list,
 .time-countdown,
@@ -47,7 +52,6 @@ body,
 
 .main__app {
   padding: 0 2rem;
-  margin-top: 5rem;
   max-width: 62.4rem;
   width: 100%;
 }
@@ -145,4 +149,10 @@ body,
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 800px) {
+  * {
+    background-color: yellow;
+  }
 }
