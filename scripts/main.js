@@ -1,8 +1,18 @@
 import ControlsMode from "./timeMode.js";
+import TimerCountdown from "./countdown.js";
 import { elements } from "./elements.js";
 
-const { html, appTitle, focoBtn, curtoBtn, longoBtn, countdownMinutes } =
-  elements;
+const {
+  html,
+  appTitle,
+  focoBtn,
+  curtoBtn,
+  longoBtn,
+  countdownMinutes,
+  playAndPauseBtn,
+  playAndPauseImg,
+  skipBtn,
+} = elements;
 
 const modeSelect = ControlsMode({
   html,
@@ -11,6 +21,12 @@ const modeSelect = ControlsMode({
   curtoBtn,
   longoBtn,
   countdownMinutes,
+});
+const timerControls = TimerCountdown({
+  countdownMinutes,
+  playAndPauseBtn,
+  playAndPauseImg,
+  skipBtn,
 });
 
 focoBtn.addEventListener("click", function () {
@@ -23,4 +39,8 @@ curtoBtn.addEventListener("click", function () {
 
 longoBtn.addEventListener("click", function () {
   modeSelect.activeMode(longoBtn, "descanso-longo", "15");
+});
+
+playAndPauseBtn.addEventListener("click", () => {
+  timerControls.play();
 });
