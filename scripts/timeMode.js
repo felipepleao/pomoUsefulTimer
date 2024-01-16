@@ -1,4 +1,10 @@
-export default function ControlsMode({ html, focoBtn, curtoBtn, longoBtn }) {
+export default function ControlsMode({
+  html,
+  focoBtn,
+  curtoBtn,
+  longoBtn,
+  countdownMinutes,
+}) {
   const modeList = [focoBtn, curtoBtn, longoBtn];
 
   function selectMode() {
@@ -7,9 +13,10 @@ export default function ControlsMode({ html, focoBtn, curtoBtn, longoBtn }) {
     });
   }
 
-  function activeMode(btnSelect, btn) {
+  function activeMode(btnSelect, btn, minutes) {
     html.setAttribute("data-theme", btn);
     btnSelect.classList.add("select");
+    countdownMinutes.textContent = minutes;
   }
 
   return {
