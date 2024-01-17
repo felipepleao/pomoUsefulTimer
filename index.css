@@ -88,14 +88,15 @@ body,
 
 .time-mode {
   margin-bottom: 3.8rem;
+  height: 5rem;
 }
 
 .time-mode-list {
   column-gap: 2rem;
-  height: 5.2em;
 }
 
 .time-mode-list-item button {
+  height: 5rem;
   font-size: clamp(1.2rem, 2vw, 1.6rem);
   color: var(--color-timer-text);
   padding: 1.2rem;
