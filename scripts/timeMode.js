@@ -20,11 +20,10 @@ export default function ControlsMode({
       case "foco":
         appTitle.innerHTML = `
         <h1 class="app__title-text">
-        Mantenha o <strong>foco</strong> para conquistar seu objetivo!
-      </h1>`;
+          Mantenha o <strong>FOCO</strong> para conquistar seu objetivo!
+        </h1>`;
         break;
       case "descanso-curto":
-        console.log("oi");
         appTitle.innerHTML = `
         <h1 class="app__title-text">
         Tempo para um <strong>breve descanso!</strong>

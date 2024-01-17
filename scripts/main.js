@@ -9,6 +9,7 @@ const {
   curtoBtn,
   longoBtn,
   countdownMinutes,
+  countdownSeconds,
   playAndPauseBtn,
   playAndPauseImg,
   playAndPauseText,
@@ -26,6 +27,7 @@ const modeSelect = ControlsMode({
 
 const timerControls = TimerCountdown({
   countdownMinutes,
+  countdownSeconds,
   playAndPauseBtn,
   playAndPauseImg,
   playAndPauseText,
