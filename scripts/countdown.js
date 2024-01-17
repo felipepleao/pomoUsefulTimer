@@ -1,6 +1,6 @@
 // import ControlsMode from "./timeMode.js";
 //teste funcionalidade
-qweqwe
+
 export default function TimerCountdown({
   countdownMinutes,
   countdownSeconds,
