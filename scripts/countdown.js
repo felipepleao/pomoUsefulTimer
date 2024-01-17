@@ -41,14 +41,14 @@ export default function TimerCountdown({
   function changeState(state) {
     skipBtn.classList.add("hidden");
     playAndPauseText.textContent = state;
-    playAndPauseImg.setAttribute("src", "/assets/play.svg");
+    playAndPauseImg.setAttribute("src", "./assets/play.svg");
   }
 
   function playAndPause() {
     if (playAndPauseBtn.innerText == "Iniciar") {
       timerDisplay();
       playAndPauseText.textContent = "Pausar";
-      playAndPauseImg.setAttribute("src", "/assets/pause.svg");
+      playAndPauseImg.setAttribute("src", "./assets/pause.svg");
       skipBtn.classList.remove("hidden");
     } else {
       changeState("Iniciar");
