@@ -23,9 +23,15 @@ const modeSelect = ControlsMode({
   curtoBtn,
   longoBtn,
   countdownMinutes,
+  countdownSeconds,
 });
 
 const timerControls = TimerCountdown({
+  html,
+  appTitle,
+  focoBtn,
+  curtoBtn,
+  longoBtn,
   countdownMinutes,
   countdownSeconds,
   playAndPauseBtn,
@@ -35,14 +41,20 @@ const timerControls = TimerCountdown({
 });
 
 focoBtn.addEventListener("click", function () {
+  timerControls.updateMinutes("25");
+  timerControls.skip();
   modeSelect.activeMode(focoBtn, "foco", "25");
 });
 
 curtoBtn.addEventListener("click", function () {
+  timerControls.updateMinutes("05");
+  timerControls.skip();
   modeSelect.activeMode(curtoBtn, "descanso-curto", "05");
 });
 
 longoBtn.addEventListener("click", function () {
+  timerControls.updateMinutes("15");
+  timerControls.skip();
   modeSelect.activeMode(longoBtn, "descanso-longo", "15");
 });
 

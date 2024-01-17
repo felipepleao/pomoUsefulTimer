@@ -1,5 +1,3 @@
-// import ControlsMode from "./timeMode.js";
-
 export default function TimerCountdown({
   countdownMinutes,
   countdownSeconds,
@@ -15,6 +13,8 @@ export default function TimerCountdown({
   let decressSeconds = seconds;
 
   function resetTimerDisplay() {
+    decressMinutes = minutes;
+    decressSeconds = seconds;
     countdownMinutes.textContent = String(minutes).padStart(2, "0");
     countdownSeconds.textContent = String(seconds).padStart(2, "0");
     clearInterval(timingController);
@@ -56,6 +56,10 @@ export default function TimerCountdown({
     }
   }
 
+  function updateMinutes(newMinutes) {
+    minutes = newMinutes;
+  }
+
   function skip() {
     changeState("Iniciar");
     resetTimerDisplay();
@@ -63,6 +67,7 @@ export default function TimerCountdown({
 
   return {
     playAndPause,
+    updateMinutes,
     skip,
   };
 }
