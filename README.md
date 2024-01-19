@@ -4,7 +4,7 @@ Este projeto tem como objetivo acompanhar a gestão do tempo por meio da técnic
 
 ## Stack utilizada
 
-**Front-end:** HTML, CSS e JS!
+**Front-end:** HTML, CSS e JS
 
 ## Deploy
 
